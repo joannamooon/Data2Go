@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data2Go</title>
+    <link rel="stylesheet" href="style.css">
+   
+
+</head>
+<body>
+    <div class="form">  
+
+        
+        <div class="tab-content">
+          <div id="signup">   
+            <h1>Registration</h1>
+            
+            <form method="post">
+            
+            <div class="top-row">
+              <div class="field-wrap">
+                <label>
+                  First Name<span class="req">*</span>
+                </label>
+                <input type="text" required autocomplete="off" id="firstName"/>
+              </div>
+          
+            <div class="field-wrap">
+                <label>
+                  Last Name<span class="req">*</span>
+                </label>
+                <input type="text"required autocomplete="off" id="lastName"/>
+              </div>
+            </div>
+  
+            <div class="field-wrap">
+              <label>
+                Birthdate<span class="req">*</span>
+              </label>
+              <input type="birthday"required autocomplete="off" id="birthday"/>
+            </div>
+            
+            <div class="field-wrap">
+              <label>
+                Address<span class="req">*</span>
+              </label>
+              <input type="address"required autocomplete="off" id="address"/>
+            </div>
+
+            <div class="field-wrap">
+                <label>
+                  How many children in household?<span class="req">*</span>
+                </label>
+                <input type="numChild"required autocomplete="off" id="numChild"/>
+              </div>
+
+            <div class="field-wrap">
+                <label for="dropdown">Household Income ($):</label>
+                        <select id="dropdown">
+                            <option value="option1">0-10,000</option>
+                            <option value="option2">10,000-30,000</option>
+                            <option value="option3">30,000-50,000</option>
+                            <option value="option4">50,000-70,000</option>
+                            <option value="option5">70,000+</option>
+                        </select>
+            </div>
+
+            <div class="field-wrap">
+                <label for="dropdown">Housing Type:</label>
+                        <select id="dropdown">
+                            <option value="option1">Emergency Shelter</option>
+                            <option value="option2">Private Rental</option>
+                            <option value="option3">Social Housing</option>
+                            <option value="option4">Own Home</option>
+                            <option value="option5">Youth Home</option>
+                            <option value="option5">Other</option>
+                        </select>
+            </div>
+
+            <div class="field-wrap">
+                <label>
+                  Any Dietary Restrictions?<span class="req">*</span>
+                </label>
+                <input type="restrictions"required autocomplete="off" id="restrictions"/>
+              </div>
+            
+              <button id="getStartedButton" type="submit" class="button button-block">Get Started</button>
+            
+            </form>
+  
+          </div>
+          
+          
+          
+        </div><!-- tab-content -->
+        
+  </div> <!-- /form -->
+
+
+
+
+  </div>
+
+  <div class="form2" style="display: none;">
+    <div class="tab-content">
+        <div id="weeklyFood">   
+          <h1>Weekly Flyer</h1>
+          
+          <form method="post">
+            <h3>What do you need this week?</h3>
+            <label>
+                <input type="checkbox" name="choice[]" value="Option 1"> Fruit
+            </label><br>
+            <label>
+                <input type="checkbox" name="choice[]" value="Option 2"> Vegetable
+            </label><br>
+            <label>
+                <input type="checkbox" name="choice[]" value="Option 3"> Protein
+            </label><br>
+            <label>
+                <input type="checkbox" name="choice[]" value="Option 4"> Grains
+            </label><br>
+            <label>
+                <input type="checkbox" name="choice[]" value="Option 5"> Dairy
+            </label><br>
+            <button type="submit">Submit Choices</button>
+        </form>
+        </div>
+    </div>
+  <script src="main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const firstForm = document.querySelector(".form");
+        const secondForm = document.querySelector(".form2");
+
+        const getStartedButton = document.querySelector("#getStartedButton");
+
+        getStartedButton.addEventListener("click", function () {
+            // Hide the first form
+            event.preventDefault();
+            firstForm.style.display = "none";
+            // Display the second form
+            secondForm.style.display = "block";
+        });
+    });
+</script>
+
+  
+
+</body>
+</html>

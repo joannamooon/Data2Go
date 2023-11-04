@@ -1,0 +1,131 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  /* Form container styles */
+  .form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Form header styles */
+  .form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Form field styles */
+  .field-wrap {
+    margin-bottom: 15px;
+  }
+  
+  .field-wrap label {
+    font-weight: bold;
+  }
+  
+  .field-wrap input,
+  .field-wrap select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Button styles */
+  .button-block {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button-block:hover {
+    background-color: #2684e4;
+  }
+  
+  /* Required field indicator styles */
+  .req {
+    color: #e74c3c;
+  }
+  
+  /* Additional styling for select elements */
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Additional styling for the form container when the "signup" tab is active */
+  #signup {
+    display: block;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media screen and (max-width: 600px) {
+    .form {
+      width: 90%;
+    }
+  }
+
+/* Apply styling to the second form */
+.form2 {
+  display: block; /* Initially hide the second form */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the h1 within the second form */
+.form2 h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style the checkboxes within the second form */
+.form2 input[type="checkbox"] {
+  margin: 5px 0;
+  /* Add more styles here as needed */
+}
+
+/* Style the "Submit Choices" button within the second form */
+.form2 button[type="submit"] {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* Style the button on hover */
+.form2 button[type="submit"]:hover {
+  background-color: #2684e4;
+  /* Add more hover styles here as needed */
+}
+
